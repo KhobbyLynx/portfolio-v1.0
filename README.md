@@ -1,2 +1,2 @@
-# portofolio-v1.0
+# portfolio-v1.0
 my personal portfolio
