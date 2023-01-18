@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Tetteh</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/skt-style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="navbar">
+        <img src="../img/skt-logo.png" class="logo" alt="SKT-lynx" />
+        <nav>
+          <ul>
+            <li><a onclick="closeNav()" href="#header">Home</a></li>
+            <li><a onclick="closeNav()" href="#about">About</a></li>
+            <li><a onclick="closeNav()" href="#services">Services</a></li>
+            <li><a onclick="closeNav()" href="#portfolio">Portfolio</a></li>
+            <li><a onclick="closeNav()" href="#contact">Contact</a></li>
+            <i class="fas fa-times close" onclick="closeNav()"></i>
+          </ul>
+          <i class="fas fa-bars menu" onclick="openNav()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <h4>Web&nbsp;Developer</h4>
+        <h1>Hi, I&apos;m&nbsp;<span>Samuel</span></h1>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-img">
+        <img src="../img/myuser.png" alt="skt-picture" />
+      </div>
+      <div class="about-text">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          aut nulla magni esse impedit veniam aliquam rerum laborum, facere
+          iure, accusantium iusto facilis, earum repellat delectus. Cum
+          repellendus rerum asperiores! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Magnam, labore.
+        </p>
+        <div class="bg-history">
+          <ul class="tab-titles">
+            <li class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </li>
+            <li class="tab-links" onclick="opentab('experience')">
+              Experience
+            </li>
+            <li class="tab-links" onclick="opentab('education')">Education</li>
+          </ul>
+          <div class="tab-contents-container">
+            <div class="tab-contents active-tab" id="skills">
+              <h5>UI/UX</h5>
+              <p>Designing Web/App Interfaces</p>
+              <h5>App Development</h5>
+              <p>Building Android/iOS Apps</p>
+              <h5>Web Development</h5>
+              <p>Web App Development</p>
+            </div>
+            <div class="tab-contents" id="experience">
+              <h5>2021 - Current</h5>
+              <p>UI/UX Design Training at ET Institute.</p>
+              <h5>2019 - 2021</h5>
+              <p>Team lead at StarApp LLC.</p>
+              <h5>2017 - 2019</h5>
+              <p>Internship at ekart eCommerce.</p>
+            </div>
+            <div class="tab-contents" id="education">
+              <h5>2016</h5>
+              <p>UI/UX Design Training Institute.</p>
+              <h5>2014</h5>
+              <p>Bsc. Computer Science from MIT USA.</p>
+              <h5>2010</h5>
+              <p>Coursera - Full Stack Web developer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-container">
+        <div class="service">
+          <i class="fas fa-code"></i>
+          <h5>Web&nbsp;Design</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            quis minus tenetur nesciunt totam earum.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="service">
+          <i class="fas fa-crop"></i>
+          <h5>UI/UX&nbsp;Design</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            quis minus tenetur nesciunt totam earum.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="service">
+          <i class="fab fa-app-store"></i>
+          <h5>App&nbsp;Design</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            quis minus tenetur nesciunt totam earum.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h1 class="sub-title">My Work</h1>
+      <div class="my-work">
+        <div class="work">
+          <img src="../img/work-1.png" />
+          <div>
+            <h5>Social Media App</h5>
+            <p>
+              The app connects you with talented people around the world.
+              <br />
+              Download it from play store.
+            </p>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+        <div class="work">
+          <img src="../img/work-2.png" />
+          <div>
+            <h5>Music App</h5>
+            <p>
+              The app connects you with talented people around the world.
+              <br />
+              Download it from play store.
+            </p>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+        <div class="work">
+          <img src="../img/work-3.png" />
+          <div>
+            <h5>Shop App</h5>
+            <p>
+              The app connects you with talented people around the world.
+              <br />
+              Download it from play store.
+            </p>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+      </div>
+      <button class="skt-btn-1">See more</button>
+    </section>
+
+    <section id="contact">
+      <div class="contact-info">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>skt.lynx01@gmail.com</p>
+        <p><i class="fas fa-phone"></i>+233 24 631 4183</p>
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/SktLynx"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/samuel-tetteh">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <button class="skt-btn-2">
+          <a href="../img/myuser.png" download>Download CV</a>
+        </button>
+      </div>
+
+      <div class="contact-message">
+        <form name="submit-to-google-sheet">
+          <input
+            class="emailInput"
+            type="text"
+            name="Name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            class="emailInput"
+            type="email"
+            name="Email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            class="emailInput"
+            name="Message"
+            rows="8"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" name="submit" class="skt-btn-2 btn emailBtn">
+            Submit
+          </button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>&copy; 2022, SKT Lynx. All Rights Reserved.</p>
+    </section>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      const nav = document.querySelector("ul");
+
+      function openNav() {
+        nav.classList.add("active");
+      }
+
+      function closeNav() {
+        nav.classList.remove("active");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz_R2twIPQ0YGVNmuFhOakrnxsxEPW_EVxZ4udDsU4RME66Ih6w3OfaysUp1gUDi0Ok3Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.querySelector("#msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

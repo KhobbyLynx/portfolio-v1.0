@@ -1,0 +1,882 @@
+/* STYLE SHEET by SKT-LYNX */
+/* © 2022, SKT Lynx. All Rights Reserved. */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    list-style: none;
+}
+
+/*--------------- COLORS-------------- */
+
+:root {
+    /* Red */
+    --cl-red-100: #FFC2CB;
+    --cl-red-200: #FF8597;
+    --cl-red-300: #FF4763;
+    --cl-red-400: #FF3352;
+    --cl-red-500: #F0052C;
+    --cl-red-600: #F50025;
+    --cl-red-700: #CC001F;
+    --cl-red-800: #7A0012;
+    --cl-red-900: #3D0009;
+    /* Green */
+    --cl-green-100: #E2F3EB;
+    --cl-green-200: #B7E1CD;
+    --cl-green-300: #8CCFB0;
+    --cl-green-400: #91D671;
+    --cl-green-500: #6CC841;
+    --cl-green-600: #5AAE32;
+    --cl-green-700: #007F5F;
+    --cl-green-800: #00523D;
+    --cl-green-900: #00291F;
+    /* Blue */
+    --cl-blue-100: #EBF5FF;
+    --cl-blue-200: #ADD6FF;
+    --cl-blue-300: #70B8FF;
+    --cl-blue-400: #3399FF;
+    --cl-blue-500: #0A85FF;
+    --cl-blue-600: #002fff;
+    --cl-blue-700: #0052A3;
+    --cl-blue-800: #003366;
+    --cl-blue-900: #001429;
+    /* Gray */
+    --cl-gray-100: #FFFFFF;
+    --cl-gray-200: #F5F5F5;
+    --cl-gray-300: #D6D6D6;
+    --cl-gray-400: #C2C2C2;
+    --cl-gray-500: #A3A3A3;
+    --cl-gray-600: #7A7A7A;
+    --cl-gray-700: #5C5C5C;
+    --cl-gray-800: #292929;
+    --cl-gray-900: #000000;
+    /* Orange */
+    --cl-orange-100: #FED6C3;
+    --cl-orange-200: #FDAC86;
+    --cl-orange-300: #FD905E;
+    --cl-orange-400: #FD8249;
+    --cl-orange-500: #FB5607;
+    --cl-orange-600: #F24E02;
+    --cl-orange-700: #CA4102;
+    --cl-orange-800: #A23402;
+    --cl-orange-900: #792701;
+    /* Yellow */
+    --cl-yellow-100: #FFEFC2;
+    --cl-yellow-200: #FFDE85;
+    --cl-yellow-300: #FFBE0B;
+    --cl-yellow-400: #FFC933;
+    --cl-yellow-500: #FFBE0B;
+    --cl-yellow-600: #FFFF00;
+    --cl-yellow-700: #CC9600;
+    --cl-yellow-800: #8F6900;
+    --cl-yellow-900: #664B00;
+    /* Pink */
+    --cl-pink-100: #FFEBF3;
+    --cl-pink-200: #FFC0CB;
+    --cl-pink-300: #FF70AC;
+    --cl-pink-400: #FF5CA0;
+    --cl-pink-500: #FF006E;
+    --cl-pink-600: #F50066;
+    --cl-pink-700: #B8004C;
+    --cl-pink-800: #7A0033;
+    --cl-pink-900: #520022;
+    /* Brown */
+    --cl-brown-100: #D3B39C;
+    --cl-brown-200: #C09372;
+    --cl-brown-300: #A9734C;
+    --cl-brown-400: #9C6644;
+    --cl-brown-500: #792701;
+    --cl-brown-600: #833920;
+    --cl-brown-700: #632B18;
+    --cl-brown-800: #511A01;
+    --cl-brown-900: #3D1400;
+    /* RGB BW */
+    --cl-red:#fF0;
+    --cl-green:#0F0;
+    --cl-blue:#00F;
+    --cl-black: #000;
+    --cl-white: #FFF;
+    /* Black shadow layer */
+    --cl-bs-rgba: 0, 0, 0, 0.6;
+    /* Shadows */
+    --cl-lg: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --cl-rg: radial-gradient(#e66465, #9198e5);
+    /* Other colors */
+    --cl-link: #0d6efd;
+    --cl-link-hover: #8F6900;
+    --cl-btn: #d63384;
+    --cl-btn-hover: #8F6900;
+    --cl-span: #df5b5b;
+  }
+
+
+/*----------- FONTS STYLE-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Nunito&family=Poppins&family=Roboto&display=swap');
+
+h2, h4, h5, h6, p, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--cl-gray-300);
+}
+
+h2 {
+    font-size: 46px;   
+    line-height: 54px;
+    color: var(--cl-gray-300);
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 44px;
+    color: var(--cl-gray-400);
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--cl-gray-700);
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 50px;
+    color: var(--cl-gray-900);
+}
+
+p {
+    font-size: 16px;
+    line-height: 36px;
+    color: var(--cl-gray-100)
+}
+
+span {
+    color: var(--cl-red-500);
+}
+
+
+.skt-btn-1 {
+    width: 130px;
+    padding: 10px;
+    outline:  none !important;
+    border: 1px solid var(--cl-red-500);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--cl-gray-200);
+    cursor: pointer;
+}
+
+.skt-btn-2 {
+    width: 150px;
+    padding: 10px;
+    outline:  none !important;
+    border: 1px solid var(--cl-red-500);
+    border-radius: 5px;
+    background: var(--cl-red-500);
+    color: var(--cl-gray-200);
+    cursor: pointer;
+}
+
+/*-------------- MAIN STYLE ------ */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--cl-gray-800);
+   
+}
+section {
+    padding: 0 80px;
+}
+.sub-title {
+    font-size: 3rem;
+    color: var(--cl-gray-200);
+    margin-bottom: 40px;
+}
+
+/*-------------- HEADER ----------*/
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/main_background.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    margin: auto 0px;
+    padding-top: 190px;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--cl-gray-300);
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--cl-red-500);
+    top: 35px;
+    left: 0;
+    position: absolute;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/*----------- ABOUT ------------*/
+#about {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+#about img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-img {
+    flex-basis: 30%;
+}
+
+.about-text {
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+
+.about-text p {
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.tab-titles {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+} 
+
+.tab-titles li {
+    margin-bottom: 20px;position: relative;color: var(--cl-gray-300);
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+
+.tab-titles li::after {
+    content: "";
+    background: var(--cl-red-500);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: 0.2s;
+}
+
+.tab-titles li.active-link::after,
+.tab-titles li:hover::after {
+    width: 60%;
+}
+
+.tab-contents-container {
+    display: flex;
+}
+
+.tab-contents-container h5 {
+    color: var(--cl-red-500);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tab-contents-container p {
+    font-size: 15px;
+    font-weight: 100;
+    color: var(--cl-gray-300);
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/*------------- MY SERVICES -----------*/
+#services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));    
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;flex-wrap: wrap;
+}
+
+.service {
+    flex-basis: 30%;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    background: var(--cl-red-500);
+    transform: translateY(-15px);
+}
+
+.service i {
+    font-size: 50px;
+    color: var(--cl-gray-200);
+    padding-bottom: 25px;
+}
+
+.service h5 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--cl-gray-200);
+}
+
+.service p {
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--cl-gray-200);
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.service a {
+    text-decoration-color:  var(--cl-red-500);
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--cl-gray-200);
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+/* --------- PORTFOLIO ------------ */
+#portfolio {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 35px;
+}
+
+.work {
+    border-radius: 10px;   
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.work img{
+    width: 100%;
+    transition:all 0.5s;
+}
+
+
+.work div {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), var(--cl-red-500)); 
+    transition: 0.5s;   
+}
+
+.work h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cl-gray-200);
+}
+
+.work p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--cl-gray-200);
+    padding: 10px 0 15px;
+}
+
+.work i{
+    font-size: 16px;
+    color: var(--cl-red-500);
+    padding: 15px;
+    background: var(--cl-gray-200);
+    border-radius: 50%;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+
+.work:hover div {
+    height: 100%;
+}
+
+button.skt-btn-1 {
+    display: block;
+    margin: 40px auto 20px; 
+    transition: 0.5s;  
+}
+
+button.skt-btn-1:hover {
+    background: var(--cl-red-500);
+}
+
+
+/* ---------- CONTACT ----------- */
+#contact {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+}
+#contact h1{
+    margin-bottom: 10px;
+}
+.contact-info {
+    flex-basis: 30%;
+}
+
+.contact-info p {
+    font-size: 15px;
+}
+
+.contact-info p i {
+    font-size: 15px;
+    padding: 0 15px 0 0;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin:20px 10px 30px 0;
+    color: var(--cl-gray-200);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.social-icons i:hover {
+    color: var(--cl-red-500);
+    transform: translateY(-5px);
+}
+
+.contact-info button{
+    transition: 0.5s;
+}
+.contact-info button:hover {
+    background: var(--cl-red-300);
+}
+
+.contact-info button a {
+    text-decoration: none;
+    color: var(--cl-gray-200);
+} 
+
+.contact-message {
+    flex-basis: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #1f1f1f;
+    color: var(--cl-gray-200);
+}
+
+button.btn {
+    width: 120px;
+    transition: 0.5s;
+}
+
+button.btn:hover {
+    background: var(--cl-red-300);
+}
+/* Email Response Message */
+#msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
+
+.copyright {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 6px;
+}
+
+.copyright p{
+     font-size: 12px;
+}
+
+
+
+
+/* -----------MEDIA QUERY------------*/
+
+/* --iPad Pro-- */
+@media only screen and (max-width: 1024px){
+    section{
+        padding: 0 60px;
+    }
+    .sub-title {
+        margin-bottom: 30px;
+    }
+    /* -----header------ */
+    #header .container {
+        padding-top: 30px;
+    }
+    .navbar .logo{
+        width: 230px;
+    }
+    nav ul{
+        gap: 40px;
+    }
+    nav ul li a{
+       font-size: 1.6rem;
+    }
+    .header-text h4{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .header-text h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+    /* ------about------ */
+    #about {
+        padding-top: 30px;
+    }
+    .about-img{
+        flex-basis: 43%;
+    }
+    .about-text p {
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 200;
+        margin-bottom: 25px;
+    }
+    .tab-titles {
+        gap: 60px;
+    }
+    .tab-titles li {
+        font-size: 18px;
+    }
+}
+
+/* -----Medium Screen------ */
+.menu, .close {
+    display: none;
+    color: var(--cl-gray-200);
+}
+@media only screen and (max-width: 920px) {
+    section{
+        padding: 0 40px;
+    }
+    .sub-title {
+        margin-bottom: 30px;
+    }
+    .menu, .close {
+        display: block;
+    }
+    .close { 
+         font-size: 45px;
+         background: var(--cl-gray-800);
+         padding: 8px 16px;
+         border-radius: 100%;
+    }
+    .menu{
+        font-size: 50px;
+    }
+    /* ---header---- */
+    .navbar .logo{
+        width: 250px;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: linear-gradient(to bottom,var(--cl-red-500), var(--cl-gray-800) )  ;
+        display: block;
+        height: 100vh;
+        width: 250px;
+        padding-top: 80px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    nav ul.active {
+        right: 0;
+    }
+    nav ul li{
+        padding: 25px;
+    }
+    nav ul li a{
+       font-size: 36px;  
+    }
+    .close {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    /* -----Contact---- */
+    .contact-info {
+        flex-basis: 40%;
+    }
+    .contact-message {
+        flex-basis: 60%;
+    }
+    .contact-info .skt-btn-2, button.btn {
+        width: 160px;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
+/* ------small devices/iPhone X------- */
+@media only screen  and (max-width: 477px) {
+    section{
+        padding: 0 15px;
+    }
+    .menu{
+        font-size: 35px;
+    }
+    .close { 
+        font-size: 30px;
+        background: var(--cl-gray-800);
+        padding: 5px 10px;
+        border-radius: 100%;
+    }
+   
+    /* ---header--- */
+    #header {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/myPhone-background.png");
+    }
+    #header .container {
+        padding-top: 15px;
+    }
+    .navbar .logo {
+        width: 150px;
+    }
+    nav ul {
+        width: 200px;
+        padding-top: 60px;
+    }
+    nav ul li {
+        padding-left: 25px;
+        padding-bottom: 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .header-text h4 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    /* ----about---- */
+    #about {
+        flex-wrap: wrap;
+    }
+    .about-img {
+        flex-basis: 80%;
+        margin: auto;
+    }
+    .about-text {
+        flex-basis: 100%;
+        margin: auto; 
+        text-align: center;
+    }
+    .about-text h1{
+        margin-bottom: 10px;
+    }
+    .bg-history {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-titles {
+        margin: auto;
+        gap: 28px;
+    }
+    .tab-contents-container {
+        margin: auto;
+    }
+    /* ----services---- */
+    #services {
+        padding-top: 30px;
+    }
+    .services-container {
+       row-gap: 30px;
+    }
+   .service {
+    flex-basis: 100%;
+    }
+    /* ----contact----- */
+    #contact {
+        flex-wrap: wrap;
+    }
+    .contact-info {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .contact-message {
+        flex-basis: 100%;
+    }
+
+}
+
+/* ------small devices/------- */
+
+/* ---------Landscape-------- */
+@media only screen and (max-height: 520px) {
+    .navbar .logo {
+        width: 180px;
+    }
+    .close {
+        font-size: 30px;
+        padding: 6px 12px;
+    }
+    nav ul li {
+        padding: 10px 0 20px 25px;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+    .menu {
+        font-size: 30px;
+    }
+    .header-text {
+        margin: auto 0px;
+        padding-top: 60px;
+    }
+    .header-text h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .header-text h4 {
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+/* --------Landscape/Galaxy Fold----- */
+@media only screen and (max-height: 320px){
+    nav ul li {
+        padding: 0 0 18px 25px;
+    }
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    .header-text {
+        padding-top: 20px;
+    }
+    #about {
+        flex-wrap: wrap;
+    }
+    .about-img {
+        flex-basis: 50%;
+        margin: auto;
+    }
+    .about-text {
+        flex-basis: 100%;
+        margin: auto; 
+        text-align: center;
+    }
+    .about-text h1{
+        margin-bottom: 10px;
+    }
+    .bg-history {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-titles {
+        margin: auto;
+    }
+    .tab-contents-container {
+        margin: auto;
+    }
+    #contact {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .contact-info {
+        flex-basis: 100%;
+    }
+    .contact-message {
+        flex-basis: 100%;
+    }
+
+}
+
